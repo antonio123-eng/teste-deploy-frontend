@@ -10,11 +10,7 @@ const Home = () => {
 
       const res = await fetch("https://teste-deploy-toughts.herokuapp.com/", {
         mode: 'cors',
-        credentials: 'include',
-        method: "GET",
-        headers: {
-          "Content-type": "application/json"
-        }
+        credentials: 'include'
       })
       const data = await res.json()
       console.log(data)
