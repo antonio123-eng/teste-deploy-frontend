@@ -9,7 +9,6 @@ const Home = () => {
     const fetchPhoto = async() => {
 
       const res = await fetch("https://teste-deploy-toughts.herokuapp.com/", {
-        mode: 'same-origin',
         credentials: 'include',
         method: "GET",
         headers: {
