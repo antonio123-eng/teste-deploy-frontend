@@ -8,7 +8,7 @@ const Home = () => {
     
     const fetchPhoto = async() => {
 
-      const res = await fetch("https://teste-deploy-toughts.herokuapp.com", {mode: "no-cors"})
+      const res = await fetch("https://teste-deploy-toughts.herokuapp.com", {mode: "cors"})
       const data = await res.json()
       console.log(data)
 
