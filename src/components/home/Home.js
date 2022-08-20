@@ -8,7 +8,7 @@ const Home = () => {
     
     const fetchPhoto = async() => {
 
-      const res = await fetch("https://teste-deploy-toughts.herokuapp.com/", {
+      const res = await fetch("https://teste-deploy-toughts.herokuapp.com/api/photos/", {
         credentials: 'include',
         method: "GET",
         headers: {
